@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "AZ900 Quiz Generator API",
+        "version": "1.0.0",
+        "description": "API para buscar perguntas de quiz sobre a certificação AZ-900."
+    },
+    "paths": {
+        "/quiz": {
+            "get": {
+                "operationId": "get_quiz_question",
+                "summary": "Obtém uma pergunta de quiz AZ-900 por tópico.",
+                "parameters": [
+                    {
+                        "name": "topic",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "O tópico do AZ-900 (ex: custos, segurança)."
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pergunta do quiz retornada com sucesso.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "question": {"type": "string"},
+                                        "options": {"type": "string"},
+                                        "correct_answer": {"type": "string"},
+                                        "explanation": {"type": "string"}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
