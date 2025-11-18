@@ -5,6 +5,11 @@
         "version": "1.0.0",
         "description": "API para buscar perguntas de quiz sobre a certificação AZ-900."
     },
+    "servers": [
+        {
+            "url": "https://musical-trout-g4ppp9r99vx5cvr55-5000.app.github.dev/"
+        }
+    ],
     "paths": {
         "/quiz": {
             "get": {
