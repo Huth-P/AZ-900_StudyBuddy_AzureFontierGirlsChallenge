@@ -43,41 +43,36 @@ O projeto cumpre integralmente os requisitos técnicos e de documentação, com 
 
 Estes prints comprovam a execução bem-sucedida das duas ações funcionais, validado através da chamada da URL Real do Codespace para ambas as ações.
 
-1. Configuração do Agente e System Prompt (Print #1)
+1. Configuração do Agente e System Prompt [Print #1](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/23-deploy%20gpt-4o.png)
 
 Evidência da personalidade do Agente, das regras de uso da Tool e do Deployment do GPT-4o.
 
-   https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/23-deploy%20gpt-4o.png
-
-2. Configuração da Ação Externa (Print #2)
+  
+2. Configuração da Ação Externa [Print #2](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/17-create%20a%20custom%20tool_Jason%20with%20Python%20URL.png)
 
 Prova que o Agente foi conectado ao servidor Python através da URL Real do Codespace e do contrato OpenAPI.
 
-   https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/17-create%20a%20custom%20tool_Jason%20with%20Python%20URL.png
-
-3. Execução da Ação 1: Geração de Quiz (/quiz) (Print #3)
+  
+3. Execução da Ação 1: Geração de Quiz (/quiz) [Print #3](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/24-test%202_WORKING.png)
 
 O Agente chamou o endpoint /quiz do servidor Python e retornou uma pergunta formatada, comprovando a execução.
 
     Comando de Teste: Me faça uma pergunta sobre serviços.
 
-   https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/24-test%202_WORKING.png
 
-4. Execução da Ação 2: Busca de Definição (/define) (Print #4)
+4. Execução da Ação 2: Busca de Definição (/define) [Print #4](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/25-test%203_second%20function.png)
 
 O Agente demonstrou domínio das Tools, escolhendo a ação /define e extraindo a definição de um termo-chave (RBAC) do código Python.
 
     Comando de Teste: Qual a definição de RBAC?
 
-   https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/25-test%203_second%20function.png
 
-5. Execução da Limitação (Foco do System Prompt) (Print #5)
+5. Execução da Limitação (Foco do System Prompt) [Print #5](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/25-test%204_limitation%20function.png)
 
 Este teste prova o funcionamento do System Prompt ("Sua única missão é auxiliar no preparo para a certificação AZ-900..."). O Agente se recusa a responder perguntas fora do escopo, demonstrando foco e clareza.
 
     Comando de Teste: Onde fica a Microsoft?
 
-   https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/25-test%204_limitation%20function.png
 
 
 
@@ -93,13 +88,13 @@ Para o passo a passo completo do processo (clique a clique), acesse o guia de do
 
 O projeto utilizou os seguintes recursos e documentações, conforme solicitado:
 
-   Documentação do Azure AI Foundry (https://learn.microsoft.com/en-us/azure/ai-foundry/)
+   [Documentação do Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)
 
-   Documentação do GitHub Codespaces (https://docs.github.com/pt/codespaces/about-codespaces/what-are-codespaces)
+   [Documentação do GitHub Codespaces](https://docs.github.com/pt/codespaces/about-codespaces/what-are-codespaces)
 
-   Repositório de Introdução ao Microsoft Agent Framework (https://github.com/Azure-Samples/get-started-with-ai-agents)
+   [Repositório de Introdução ao Microsoft Agent Framework](https://github.com/Azure-Samples/get-started-with-ai-agents)
 
-   Especificação OpenAPI 3.0 (https://swagger.io/specification/)
+   [Especificação OpenAPI 3.0](https://swagger.io/specification/)
 
 
 
