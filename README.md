@@ -6,7 +6,7 @@
 O AZ-900 Study Buddy é um Copilot especializado, desenvolvido para o "Build Your First Copilot Challenge" da Mentoria "Azure Frontier Girls" da Microsoft em parceria com a WomakersCode. Seu objetivo é auxiliar na preparação para a certificação Microsoft AZ-900 (Azure Fundamentals).
 
 Este projeto demonstra o uso avançado do Azure AI Agent Service ao integrar um modelo de linguagem (GPT-4o) com código Python real (Aula 3), rodando em um servidor Flask/Codespaces, para fornecer dados dinâmicos e definições. O Agente possui uma personalidade focada, recusando-se a responder a tópicos fora do escopo AZ-900, garantindo clareza e propósito.
-
+---
 
 
 ## ✅ Requisitos de Elegibilidade (Definition of Done)
@@ -24,7 +24,7 @@ O projeto cumpre integralmente os requisitos técnicos e de documentação, com 
   * Entrega Técnica Superior: Utilização de código Python (servidor Flask) em um endpoint real (Codespaces), cobrindo o conteúdo da Aula 3.
 
   * Documentação e Clareza: README detalhado com prints e explicação do fluxo de execução.
-
+---
 
 
 ## 🛠️ Detalhes da Implementação Técnica
@@ -36,7 +36,8 @@ O projeto cumpre integralmente os requisitos técnicos e de documentação, com 
 | **Contrato da Ação** | OpenAPI 3.0 | `quiz_api.json` |
 | **Backend** | Python e Framework Flask rodando em GitHub Codespaces | `app.py` e `requirements.txt` |
 | **Base URL (Endpoint Ativo)** | URL real e dinâmica do Codespace | `https://musical-trout-g4ppp9r99vx5cvr55-5000.app.github.dev/` |
-
+| **Modelo (LLM)** | Gemini & ChatGPT | Suporte para codificar e atrelar ao Azure |
+---
 
 
 ## 🚀 Fluxo de Execução e Evidências Funcionais
@@ -72,16 +73,30 @@ O Agente demonstrou domínio das Tools, escolhendo a ação /define e extraindo 
 Este teste prova o funcionamento do System Prompt ("Sua única missão é auxiliar no preparo para a certificação AZ-900..."). O Agente se recusa a responder perguntas fora do escopo, demonstrando foco e clareza.
 
     Comando de Teste: Onde fica a Microsoft?
+---
 
 
+## 🖼️ Representação Visual do Fluxo
 
+```mermaid
+graph TD
+    A[Usuário: "Qual a definição de RBAC?"] --> B{Agente GPT-4o: Decisão de Ação};
+    B -- Intenção: Definição --> C(Chamada da Tool: get_service_definition);
+    C --> D[Codespace: Executa app.py];
+    D -- Retorna JSON com Definição --> B;
+    B --> E[Agente Formata a Resposta];
+    E --> F[Usuário: Exibe a definição formatada];
+```
+
+---
+ 
 
 ## 📝 Guia de Configuração Detalhado
 
 Para o passo a passo completo do processo (clique a clique), acesse o guia de documentação abaixo:
 
 [**Acesse o GUIA COMPLETO DE IMPLEMENTAÇÃO (20+ Prints)**](https://github.com/Huth-P/AzureFrontierGirls-StudyBuddy-Python/blob/main/Guia_Implementacao/GUIA_IMPLEMENTACAO.md)
-
+---
 
 
 ## 🔗 Links de Referência
@@ -95,7 +110,7 @@ O projeto utilizou os seguintes recursos e documentações, conforme solicitado:
    [Repositório de Introdução ao Microsoft Agent Framework](https://github.com/Azure-Samples/get-started-with-ai-agents)
 
    [Especificação OpenAPI 3.0](https://swagger.io/specification/)
-
+---
 
 
 ## 🛑 Gerenciamento de Custos
